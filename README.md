@@ -51,7 +51,9 @@ The REST Service API can be queried to show:
 
 - Get the hours for a specific user -> [GET] http://localhost:8080/vacation/rest/hours/1
 
-- Submit a vacation request --> [POST] http://localhost:8080/vacation/rest/request   [DATA] `{"associateId":"1","hours":-300}`
+- Submit a vacation request --> [POST] http://localhost:8080/vacation/rest/request   
+
+  [DATA] `{"associateId":"1","hours":-300}`
 
 
 Supporting Articles
