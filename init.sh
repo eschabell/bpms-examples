@@ -128,7 +128,7 @@ mvn clean install -f $PRJ_DIR/pom.xml
 echo
 echo "Deploying web service for vacation request..."
 echo
-cp $SUPPORT_DIR/$WEBSERVICE $SERVER_DIR
+cp $PRJ_DIR/target/$WEBSERVICE $SERVER_DIR
 
 echo "  - setting up standalone.xml configuration adjustments..."
 echo
