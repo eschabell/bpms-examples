@@ -22,6 +22,7 @@
     <artifactId>vacation</artifactId>
     <packaging>war</packaging>
     <name>Vacation Service</name>
+    <version>1.0</version>
 
     <licenses>
         <license>
@@ -142,6 +143,23 @@
             </build>
         </profile>
     </profiles> 
-    <version>0.0.1-SNAPSHOT</version>
+
+		<repositories>
+			  <repository>
+					<id>jboss-public-repository-group</id>
+					<name>JBoss Public Repository Group</name>
+					<url>http://maven.repository.redhat.com/techpreview/all/</url>
+					<!-- <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-ip-6.1-build/latest/maven/</url> -->
+          <releases>
+				     <enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>daily</updatePolicy>
+					</snapshots>
+				</repository>
+		</repositories>
+
 </project>
 
