@@ -4,7 +4,7 @@ setlocal
 set PROJECT_HOME=%~dp0
 set DEMO=Vacation Request Demo
 set AUTHORS=Kent Hua, Eric D. Schabell
-set PROJECT=git@github.com:eschabell/bpms-vacation-request-demo.git
+set PROJECT=git@github.com:jbossdemocentral/bpms-vacation-request-demo.git
 set PRODUCT=JBoss BPM Suite
 set JBOSS_HOME=%PROJECT_HOME%target\jboss-bpmsuite-%VERSION%
 set SERVER_DIR=%JBOSS_HOME%\standalone\deployments\

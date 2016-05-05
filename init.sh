@@ -1,7 +1,7 @@
 #!/bin/sh 
 DEMO="Vacation Request Demo"
 AUTHORS="Kent Hua, Eric D. Schabell"
-PROJECT="git@github.com:eschabell/bpms-vacation-request-demo.git"
+PROJECT="git@github.com:jbossdemocentral/bpms-vacation-request-demo.git"
 PRODUCT="JBoss BPM Suite"
 JBOSS_HOME=./target/jboss-eap-6.4
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/

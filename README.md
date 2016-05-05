@@ -9,12 +9,15 @@ functionality:
 
 - Business Rule for auto approval
 
-This is a vacation process example which calls out to a REST service to get vacation information based on a particular ID.  Based on the rule for hours requested (10 hours or less), the request is auto approved or is routed to a manager.  If the manager does not claim/complete the task in 30 seconds, it's escalated to another group.  Once approved or not approved, the original requester can see the status.
+This is a vacation process example which calls out to a REST service to get vacation information based on a 
+particular ID. Based on the rule for hours requested (10 hours or less), the request is auto approved or is 
+routed to a manager. When the manager claims but does not complete the task in 30 seconds, it's automatically
+returned to the group. Once approved or not approved, the original requester can see the status.
 
 
 Option 1 - Install on your machine
 ----------------------------------
-1. [Download and unzip.](https://github.com/eschabell/bpms-vacation-request-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-vacation-request-demo/archive/master.zip)
 
 2. Add products to installs directory. For example download and add BPMS installer jar into the installs directory.
 
@@ -28,6 +31,45 @@ Option 1 - Install on your machine
     ```
      - login for admin and other roles (u:erics / p:bpmsuite1!)
     ```
+
+Option 2 - Install on Red Hat CDK OpenShift Enterprise image
+------------------------------------------------------------
+The following steps can be used to install this demo on OpenShift Enterprise using the
+Red Hat Container Development Kit (CDK)
+
+1. [App Dev Cloud with JBoss Vacation Request Demo](https://github.com/redhatdemocentral/rhcs-vacation-request-demo)
+
+
+Option 3 - Generate containerized installation
+----------------------------------------------
+The following steps can be used to configure and run the demo in a container
+
+1. [Download and unzip.](https://github.com/jbossdemocentral/bpms-vacation-request-demo/archive/master.zip)
+
+2. Add product installer to installs directory. For example download and add BPMS installer jar into the installs directory.
+
+3. Copy contents of support/docker directory to the project root.
+
+4. Build demo image
+
+	```
+	docker build -t jbossdemocentral/bpms-vacation-request-demo .
+	```
+5. Start demo container
+
+	```
+	docker run -it -p 8080:8080 -p 9990:9990 jbossdemocentral/bpms-vacation-request-demo
+	```
+6. Login to http://&lt;DOCKER_HOST&gt;:8080/business-central
+  
+    ```
+     - login for admin and other roles (u:erics / p:bpmsuite1!)
+    ```
+    
+*Note*: Replace localhost with DOCKER_HOST when it appears in other locations within the documentation
+
+Additional information can be found in the jbossdemocentral docker [developer repository](https://github.com/jbossdemocentral/docker-developer)
+
 
 Submitting a Vacation Request
 -----------------------------
@@ -67,8 +109,8 @@ See the tagged releases for the following versions of the product:
 
 - v1.0 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with vacation request process project installed.
 
-![BPM Suite](https://github.com/eschabell/bpms-vacation-request-demo/blob/master/docs/demo-images/bpmsuite.png?raw=true)
+![BPM Suite](https://github.com/jbossdemocentral/bpms-vacation-request-demo/blob/master/docs/demo-images/bpmsuite.png?raw=true)
 
-![Vacation Process](https://github.com/eschabell/bpms-vacation-request-demo/blob/master/docs/demo-images/process.png?raw=true)
+![Vacation Process](https://github.com/jbossdemocentral/bpms-vacation-request-demo/blob/master/docs/demo-images/process.png?raw=true)
 
 
