@@ -3,7 +3,7 @@ setlocal
 
 set PROJECT_HOME=%~dp0
 set DEMO=Vacation Request Demo
-set AUTHORS=Kent Hua, Eric D. Schabell
+set AUTHORS=Kent Hua, Eric D. Schabell, Duncan Doyle
 set PROJECT=git@github.com:jbossdemocentral/bpms-vacation-request-demo.git
 set PRODUCT=JBoss BPM Suite
 set JBOSS_HOME=%PROJECT_HOME%target\jboss-bpmsuite-%VERSION%
@@ -14,10 +14,10 @@ set SRC_DIR=%PROJECT_HOME%installs
 set SUPPORT_DIR=%PROJECT_HOME%support
 set PRJ_DIR=%PROJECT_HOME%projects\vacation
 set WEBSERVICE=vacation.war
-set BPMS=jboss-bpmsuite-installer-6.2.0.BZ-1299002.jar
+set BPMS=jboss-bpmsuite-6.3.0.GA-installer.jar
 set EAP=jboss-eap-6.4.0-installer.jar
-set EAP_PATCH=jboss-eap-6.4.4-patch.zip
-set VERSION=6.2
+set EAP_PATCH=jboss-eap-6.4.7-patch.zip
+set VERSION=6.3
 
 REM wipe screen.
 cls
