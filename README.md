@@ -107,6 +107,8 @@ Released versions
 -----------------
 See the tagged releases for the following versions of the product:
 
+- v1.1 - JBoss BPM Suite 6.3.0 on JBoss EAP 6.4.7 with vacation request process project installed.
+
 - v1.0 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with vacation request process project installed.
 
 ![BPM Suite](https://github.com/jbossdemocentral/bpms-vacation-request-demo/blob/master/docs/demo-images/bpmsuite.png?raw=true)
