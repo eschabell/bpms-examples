@@ -32,12 +32,10 @@ Option 1 - Install on your machine
      - login for admin and other roles (u:erics / p:bpmsuite1!)
     ```
 
-Option 2 - Install on Red Hat CDK OpenShift Enterprise image
-------------------------------------------------------------
-The following steps can be used to install this demo on OpenShift Enterprise using the
-Red Hat Container Development Kit (CDK)
 
-1. [App Dev Cloud with JBoss Vacation Request Demo](https://github.com/redhatdemocentral/rhcs-vacation-request-demo)
+Option 2 - Install on OpenShift
+-------------------------------
+Running this demo in a container on any OpenShift Container Platform is [available at Red Hat Demo Central](https://github.com/redhatdemocentral/rhcs-vacation-request-demo).
 
 
 Option 3 - Generate containerized installation
